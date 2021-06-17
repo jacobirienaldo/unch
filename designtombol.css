@@ -44,3 +44,26 @@
 	border: 2px solid red;
 	background-color:#fff;
 }
+
+@media (max-width: 460px)
+{
+	.uktombol1, .uktombol2, .uktombol3, .uktombol4
+	{
+		width: 70px;
+		height: 20px;
+		font-size: 10px;
+	}
+	.uktomboloff
+	{
+		width: 70px;
+		height: 20px;
+		font-size: 10px;
+	}
+	#tomboloff
+	{
+		position: relative;
+		top: -93px;
+		left: 85px;
+	}
+}
+	

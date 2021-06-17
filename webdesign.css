@@ -63,15 +63,13 @@ ul li a:hover
 	position: relative;
 	bottom:10px;
 	left: 150px;
-	width:100px;
 }
 #control
 {
 	width: 600px;
-	height:190px;
 	float: right;
 	display: grid;
-	border: 1px red;
+	height: 197px;
 }
 #footer
 {
@@ -79,7 +77,6 @@ ul li a:hover
 	clear: both;
 	text-align: right;
 	background-color: rgb(255,127,39);
-	height: 27px;
 }
 #mark
 {
@@ -107,3 +104,56 @@ ul li a:hover
 	opacity:0;
 	transition:0.2s;
 }
+
+@media (max-width: 460px)
+{
+	#container
+	{
+		width: 450px;
+	}
+	#header
+	{
+		font-size: 10px;
+	}
+	#sidebar
+	{
+		width: 120px;
+	}
+	ul
+	{
+		font-size: 12px;
+		left: -20px;
+	}
+	#content
+	{
+		width: 330px;
+	}
+	#pompaawal
+	{
+		width:330px;
+	}
+	#table1
+	{
+		bottom:5px;
+		left: 90px;
+		font-size: 12px;
+	}
+	#control
+	{
+		width: 330px;
+	}
+	#mark
+	{
+		width:15px;
+	}
+	#marktext
+	{
+		left:175px;
+		top:53px;
+		width:77%;
+		height:16%;
+		font-size:5px;
+		transform: scale(1);
+		opacity:0;
+	}
+{
