@@ -1,0 +1,109 @@
+#container
+{
+	margin:0;
+	padding:0;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+#header
+{
+	background: linear-gradient(90deg,#0162c8,#55e7fc);
+	color: white;
+	padding: 0;
+}
+#imgheader
+{
+	height: 2em;
+	display: inline-block;
+	vertical-align: middle;
+}
+#sidebar
+{
+	width: 180px;
+	float: left;
+}
+ul
+{
+	position: relative;
+	top: -10px;
+	left: -10px;
+	display: flex;
+	flex-direction: column;
+}
+ul li a
+{
+	position: relative;
+	display: inline-block;
+	transition: 0.5s;
+	z-index: 1;
+	text-decoration:none;
+	color: black;
+}
+ul li a:hover
+{
+	transform: scale(1.2);
+	z-index: 1000;
+	background: #ff3f81;
+	border-radius: 7px;
+}
+#content
+{
+	width: 600px;
+	float: right;
+}
+#pompaawal
+{
+	width: 600px;
+	z-index: 1;
+}
+#table1
+{
+	position: relative;
+	bottom:10px;
+	left: 150px;
+	width:100px;
+}
+#control
+{
+	width: 600px;
+	height:190px;
+	float: right;
+	display: grid;
+	border: 1px red;
+}
+#footer
+{
+	bottom: 0px;
+	clear: both;
+	text-align: right;
+	background-color: rgb(255,127,39);
+	height: 27px;
+}
+#mark
+{
+	width:25px;
+	position: relative;
+	right: 5px;
+	z-index:3;
+}
+#marktext
+{
+	position:relative;
+	left:265px;
+	top:107px;
+	width:144%;
+	height:21%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	font-family:'Quicksand';
+	color:#fff;
+	font-size:5px;
+	background:rgba(13, 15, 27,0.9);
+	transform: scale(1);
+	z-index:3;
+	opacity:0;
+	transition:0.2s;
+}

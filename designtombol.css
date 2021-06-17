@@ -1,0 +1,46 @@
+#tomboloff
+{
+	position: relative;
+	top: -115px;
+	left: 120px;
+}
+#tombol1 input:active
+{
+	background-color:#41f321;
+}
+#tombol2 input:active
+{
+	background-color:#41f321;
+}
+#tombol3 input:active
+{
+	background-color:#41f321;
+}
+#tombol4 input:active
+{
+	background-color:#41f321;
+}
+#tomboloff input:active
+{
+	background:red;
+}
+.uktombol1, .uktombol2, .uktombol3, .uktombol4
+{
+	width: 100px;
+	height: 30px;
+	border-radius: 40px;
+	letter-spacing: 1px;
+	font-size: 15px;
+	border: 2px solid #41f321;
+	background-color:#fff;
+}
+.uktomboloff
+{
+	width: 100px;
+	height: 25px;
+	border-radius: 40px;
+	letter-spacing: 1px;
+	font-size: 15px;
+	border: 2px solid red;
+	background-color:#fff;
+}

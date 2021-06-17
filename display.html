@@ -1,0 +1,118 @@
+<html>
+<!-- AWP_In_Variable Name='"tunggal1"' -->
+<!-- AWP_In_Variable Name='"tunggal2"' -->
+<!-- AWP_In_Variable Name='"seri"' -->
+<!-- AWP_In_Variable Name='"paralel"' -->
+<!-- AWP_In_Variable Name='"OFF"' -->
+<!-- AWP_In_Variable Name='"m1"' -->
+<!-- AWP_In_Variable Name='"m2"' -->
+<!-- AWP_In_Variable Name='"sv1"' -->
+<!-- AWP_In_Variable Name='"sv2"' -->
+<!-- AWP_In_Variable Name='"sv3"' -->
+<!-- AWP_In_Variable Name='"sv4"' -->
+<!-- AWP_In_Variable Name='"sv5"' -->
+<!-- AWP_In_Variable Name='"sv6"' -->
+	<head>
+		<meta name="viewport" content="width=device-width", initial-scale=1.0">
+		<title>Kendali Pompa Jarak Jauh</title>
+		<link rel="stylesheet" type="text/css" href="webdesign.css">
+		<link rel="stylesheet" type="text/css" href="designindikator.css">
+		<link rel="stylesheet" type="text/css" href="designtombol.css">
+		<script src="designmark.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1><img id="imgheader" src="logo polman.png">  Kendali Pompa Jarak Jauh</h1>
+			</div>
+			<div id="main">
+				<div id="sidebar">
+				Menu:
+				<ul>
+					<li><a href="tabel plc.html">Status I/O PLC</a></li>
+				</ul>
+				<label id="marktext">jacobirienaldo.</label>
+				</div>
+				<div id="content">
+						<img id="pompaawal" src="kondisiawal.jpg">
+						<label id="indikatorsv1">....</label>
+						<label id="indikatorsv2">....</label>
+						<label id="indikatorsv3">....</label>
+						<label id="indikatorsv4">....</label>
+						<label id="indikatorsv5">....</label>
+						<label id="indikatorsv6">....</label>
+						<label id="indikatorm1">.....</label>
+						<label id="indikatorm2">.....</label>
+				</div>
+				<div id="control">
+						<form id="tombol1">
+							<input type="submit" value="tunggal1" class="uktombol1">
+							<input type="hidden" name='"tunggal1"' value="1">
+						</form>
+						<form id="tombol2">
+							<input type="submit" value="tunggal2" class="uktombol2">
+							<input type="hidden" name='"tunggal2"' value="1">
+						</form>
+						<form id="tombol3">
+							<input type="submit" value="seri" class="uktombol3">
+							<input type="hidden" name='"seri"' value="1">
+						</form>
+						
+						<form id="tombol4">
+							<input type="submit" value="paralel" class="uktombol4">
+							<input type="hidden" name='"paralel"' value="1">
+						</form>
+						<form id="tomboloff">
+							<input type="submit" value="off" class="uktomboloff">
+							<input type="hidden" name='"OFF"' value="1">
+						</form>
+				</div>
+				<div id="footer">
+					<img id="mark" onmouseover="show()" onmouseout="unshow()" src="mark.png">
+				</div>
+			</div>
+		</div>
+		<script>
+		if (:="sv1":==1)
+		{
+			document.getElementById("indikatorsv1").style.backgroundColor = "#11ff11";
+			document.getElementById("indikatorsv1").style.color = "#11ff11";
+		}
+		if (:="sv2":==1)
+		{
+			document.getElementById("indikatorsv2").style.backgroundColor = "#11ff11";
+			document.getElementById("indikatorsv2").style.color = "#11ff11";
+		}
+		if (:="sv3":==1)
+		{		
+			document.getElementById("indikatorsv3").style.backgroundColor = "#11ff11";
+			document.getElementById("indikatorsv3").style.color = "#11ff11";
+		}
+		if (:="sv4":==1)
+		{
+			document.getElementById("indikatorsv4").style.backgroundColor = "#11ff11";
+			document.getElementById("indikatorsv4").style.color = "#11ff11";
+		}
+		if (:="sv5":==1)
+		{
+			document.getElementById("indikatorsv5").style.backgroundColor = "#11ff11";
+			document.getElementById("indikatorsv5").style.color = "#11ff11";
+		}
+		if (:="sv6":==1)
+		{
+			document.getElementById("indikatorsv6").style.backgroundColor = "#11ff11";
+			document.getElementById("indikatorsv6").style.color = "#11ff11";
+		}
+		if (:="m1":==1)
+		{
+			document.getElementById("indikatorm1").style.backgroundColor = "yellow";
+			document.getElementById("indikatorm1").style.color = "yellow";
+		}
+		if (:="m2":==1)
+		{
+			document.getElementById("indikatorm2").style.backgroundColor = "yellow";
+			document.getElementById("indikatorm2").style.color = "yellow";
+		}	
+		</script>
+	</body>
+</html>
