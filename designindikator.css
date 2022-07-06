@@ -84,6 +84,60 @@
 	z-index: 2;
 	color:rgb(195,195,195);
 }
+#indikatoremergency
+{
+	position: relative;
+	top:-360px;
+	left:120px;
+	width: 100px;
+	background-color: red;
+	z-index: 2;
+	color: red;
+	border-radius: 40px;
+}
+#keteranganemergency
+{
+	position: relative;
+	top:-360px;
+	left:120px;
+	width: 100px;
+	z-index: 2;
+}
+#indikatorpv, #indikatorvg1, #indikatorpg1, #indikatorpg2, #indikatorpg3, #indikatorfm
+{
+	position: relative;
+	font-size:12px;
+}
+#indikatorpv
+{
+	top: -270px;
+	left: 245px;
+}
+#indikatorvg1
+{
+	top: -280px;
+	left: -78px;
+}
+#indikatorpg1
+{
+	top: -215px;
+	left: 123px;
+}
+#indikatorpg2
+{
+	top: -323px;
+	left: 99px;
+}
+#indikatorpg3
+{
+	top: -280px;
+	left: 228px;
+}
+#indikatorfm
+{
+	top: -220px;
+	left: 208px;
+}
 
 @media (max-width: 460px)
 {
@@ -93,44 +147,78 @@
 	}
 	#indikatorsv1
 	{
-		top:-164px;
+		top:-162px;
 		left:8px;
 	}
 	#indikatorsv2
 	{
-		top:-192px;
+		top:-191px;
 		left:79px;
 	}
 	#indikatorsv3
 	{
-		top:-132px;
+		top:-131px;
 		left:65px;
 	}
 	#indikatorsv4
 	{
-		top:-192px;
+		top:-191px;
 		left:169px;
 	}
 	#indikatorsv5
 	{
 		position: relative;
-		top:-132px;
+		top:-131px;
 		left:155px;
 	}
 	#indikatorsv6
 	{
 		position: relative;
-		top:-162px;
+		top:-161px;
 		left:82px;
 	}
 	#indikatorm1
 	{
-		top:-175px;
+		top:-174px;
 		left:59px;
 	}
 	#indikatorm2
 	{
 		top:-114px;
 		left:43px;
+	}
+	#indikatorpv, #indikatorvg1, #indikatorpg1, #indikatorpg2, #indikatorpg3, #indikatorfm
+	{
+		font-size:10px;
+	}
+	#indikatorpv
+	{
+		top: -154px;
+		left: 73px;
+	}
+	#indikatorvg1
+	{
+	top: -158px;
+	left: -78px;
+	}
+	#indikatorpg1
+	{
+		top: -185px;
+		left: 32px;
+	}
+	#indikatorpg2
+	{
+		top: -125px;
+		left: 10px;
+	}
+	#indikatorpg3
+	{
+		top: -126px;
+		left: 68px;
+	}
+	#indikatorfm
+	{
+		top: -158px;
+		left: 48px;
 	}
 }

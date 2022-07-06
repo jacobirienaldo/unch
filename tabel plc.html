@@ -12,6 +12,7 @@
 <!-- AWP_In_Variable Name='"sv4"' -->
 <!-- AWP_In_Variable Name='"sv5"' -->
 <!-- AWP_In_Variable Name='"sv6"' -->
+<!-- AWP_In_Variable Name='"Proportional_valve"' -->
 	<head>
 		<meta name="viewport" content="width=device-width", initial-scale=1.0">
 		<title>Status I/O PLC Kendali Pompa Jarak Jauh</title>
@@ -25,9 +26,10 @@
 			</div>
 			<div id="main">
 				<div id="sidebar">
-				Menu:
+				<label id="menu">Menu:</label>
 				<ul>
 					<li><a href="display.html">Kendali Pompa</a></li>
+					<li><a href="perhitungan.html">Perhitungan Pompa</a></li>
 				</ul>
 				<label id="marktext">jacobirienaldo.</label>
 				</div>
@@ -88,6 +90,10 @@
 					<tr>
 						<td><p align="center">sv6</p></td>
 						<td><p align="center">:="sv6":</p></td>
+					</tr>
+					<tr>
+						<td><p align="center">bukaan katup</p></td>
+						<td><p align="center">:="Proportional_valve":</p></td>
 					</tr>
 				</table>
 				</div>

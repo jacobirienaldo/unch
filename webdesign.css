@@ -6,6 +6,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	background-color: white;
+	min-height: 100vh;
 }
 #header
 {
@@ -24,10 +25,15 @@
 	width: 180px;
 	float: left;
 }
+#menu
+{
+	position:relative;
+	top: -7px;
+}
 ul
 {
 	position: relative;
-	top: -10px;
+	top: -15px;
 	left: -10px;
 	display: flex;
 	flex-direction: column;
@@ -40,6 +46,7 @@ ul li a
 	z-index: 1;
 	text-decoration:none;
 	color: black;
+	font-size:14px;
 }
 ul li a:hover
 {
@@ -48,11 +55,15 @@ ul li a:hover
 	background: #ff3f81;
 	border-radius: 7px;
 }
-#content
+#content, #content3
 {
 	width: 600px;
 	float: right;
 }
+#content3
+{
+	height: 520px;
+}	
 #pompaawal
 {
 	width: 600px;
@@ -64,9 +75,21 @@ ul li a:hover
 	bottom:10px;
 	left: 150px;
 }
+#table2
+{
+	position: relative;
+	left: 140px;
+	width: 200px;
+	text-align: center;
+}
+#table3
+{
+	position:relative;
+	top: 20px;
+}
 #control
 {
-	width: 600px;
+	width: 530px;
 	float: right;
 	display: grid;
 	height: 197px;
@@ -113,16 +136,23 @@ ul li a:hover
 	}
 	#header
 	{
-		font-size: 10px;
+		font-size: 8px;
 	}
 	#sidebar
 	{
 		width: 120px;
 	}
+	#menu
+	{
+		font-size:12px;
+	}
 	ul
 	{
-		font-size: 12px;
-		left: -20px;
+		font-size: 10px;
+	}
+	ul li a
+	{
+		font-size: 10px;
 	}
 	#content
 	{
@@ -155,5 +185,21 @@ ul li a:hover
 		font-size:5px;
 		transform: scale(1);
 		opacity:0;
+	}
+	#table3
+	{
+		font-size: 12px;
+		top:-140px;
+		left : 187px;
+	}
+	#table2
+	{
+		font-size: 12px;
+		left: 350px;
+		top : -160px;
+	}
+	#content3
+	{
+		height: 250px;
 	}
 {

@@ -12,8 +12,13 @@
 <!-- AWP_In_Variable Name='"sv4"' -->
 <!-- AWP_In_Variable Name='"sv5"' -->
 <!-- AWP_In_Variable Name='"sv6"' -->
+<!-- AWP_In_Variable Name='"level1"' -->
+<!-- AWP_In_Variable Name='"level2"' -->
+<!-- AWP_In_Variable Name='"nilai_PV"' -->
+<!-- AWP_In_Variable Name='"standby on"' -->
+<!-- AWP_In_Variable Name='"Emergency"' -->
 	<head>
-		<meta name="viewport" content="width=device-width", initial-scale=1.0">
+		<meta name="viewport" content="width=device-width", initial-scale=1.0" />
 		<title>Kendali Pompa Jarak Jauh</title>
 		<link rel="stylesheet" type="text/css" href="webdesign.css">
 		<link rel="stylesheet" type="text/css" href="designindikator.css">
@@ -27,9 +32,10 @@
 			</div>
 			<div id="main">
 				<div id="sidebar">
-				Menu:
+				<label id="menu">Menu:</label>
 				<ul>
 					<li><a href="tabel plc.html">Status I/O PLC</a></li>
+					<li><a href="perhitungan.html">Perhitungan Pompa</a></li>
 				</ul>
 				<label id="marktext">jacobirienaldo.</label>
 				</div>
@@ -43,8 +49,17 @@
 						<label id="indikatorsv6">....</label>
 						<label id="indikatorm1">.....</label>
 						<label id="indikatorm2">.....</label>
+						<label id="indikatorvg1">VG1</label>
+						<label id="indikatorpg1">PG1</label>
+						<label id="indikatorpg2">PG2</label>
+						<label id="indikatorpg3">PG3</label>
+						<label id="indikatorfm">FM</label>
+						<label id="indikatorpv">:="nilai_PV":</label>
+						<label id="indikatoremergency">.....</label>
+						<label id="keteranganemergency">Operasi OFF</label>
 				</div>
 				<div id="control">
+						<label id="judulcontrol1">Tombol Pengoperasian</label>
 						<form id="tombol1">
 							<input type="submit" value="tunggal1" class="uktombol1">
 							<input type="hidden" name='"tunggal1"' value="1">
@@ -65,6 +80,19 @@
 						<form id="tomboloff">
 							<input type="submit" value="off" class="uktomboloff">
 							<input type="hidden" name='"OFF"' value="1">
+						</form>
+						<label id="judulcontrol2">Tombol Bukaan</label>
+						<form id="level1">
+						<input type="submit" value="&#8593" class="uklevel1">
+						<input type="hidden" name='"level1"' value="1">
+						</form>
+						<form id="level2">
+							<input type="submit" value="&#8595" class="uklevel2">
+							<input type="hidden" name='"level2"' value="1">
+						</form>
+						<form id="emergency">
+							<input type="submit" value="EMERGENCY" class="ukemergency">
+							<input type="hidden" name='"Emergency"' value="1">
 						</form>
 				</div>
 				<div id="footer">
@@ -113,6 +141,32 @@
 			document.getElementById("indikatorm2").style.backgroundColor = "yellow";
 			document.getElementById("indikatorm2").style.color = "yellow";
 		}	
+		if (:="standby on":==1)
+		{
+			document.getElementById("indikatoremergency").style.backgroundColor = "green";
+			document.getElementById("indikatoremergency").style.color = "green";
+			document.getElementById("keteranganemergency").innerHTML = "Operasi ON";
+		}
+		if (:="Proportional_valve":==2764)
+		{
+			document.getElementById("indikatorpv").innerHTML = "0";
+		}
+		if (:="Proportional_valve":==5530)
+		{
+			document.getElementById("indikatorpv").innerHTML = "1/4";
+		}
+		if (:="Proportional_valve":==8294)
+		{
+			document.getElementById("indikatorpv").innerHTML = "1/2";
+		}
+		if (:="Proportional_valve":==11060)
+		{
+			document.getElementById("indikatorpv").innerHTML = "3/4";
+		}
+		if (:="Proportional_valve":==13825)
+		{
+			document.getElementById("indikatorpv").innerHTML = "1";
+		}
 		</script>
 	</body>
 </html>

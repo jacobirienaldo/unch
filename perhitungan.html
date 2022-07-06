@@ -1,0 +1,103 @@
+<html>
+<!-- AWP_In_Variable Name='"nilai_PV"' -->
+<!-- AWP_In_Variable Name='"nilai_pg1"' -->
+<!-- AWP_In_Variable Name='"nilai_pg2"' -->
+<!-- AWP_In_Variable Name='"nilai_pg3"' -->
+<!-- AWP_In_Variable Name='"nilai_vg1"' -->
+<!-- AWP_In_Variable Name='"nilai_fm"' -->
+	<head>
+		<meta name="viewport" content="width=device-width", initial-scale=1.0">
+		<meta http-equiv="refresh" content="1"/>
+		<title>Status I/O PLC Kendali Pompa Jarak Jauh</title>
+		<link rel="stylesheet" type="text/css" href="webdesign.css">
+		<script src="designmark.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1><img id="imgheader" src="logo polman.png">  Status I/O PLC Kendali Pompa Jarak Jauh</h1>
+			</div>
+			<div id="main">
+				<div id="sidebar">
+				<label id="menu">Menu:</label>
+				<ul>
+					<li><a href="display.html">Kendali Pompa</a></li>
+					<li><a href="tabel plc.html">Status I/O PLC</a></li>
+				</ul>
+				<label id="marktext">jacobirienaldo.</label>
+				</div>
+				<div id="content3">
+					<table border ="1" id="table2" cellpadding="5">
+						<tr>
+							<td>Indikator</td>
+							<td>Nilai</td>
+						</tr>
+						<tr>
+							<td>VG1</td>
+							<td>:="nilai_vg1": kPa</td>
+						</tr>
+						<tr>
+							<td>PG1</td>
+							<td>:="nilai_pg1": kPa</td>
+						</tr>
+						<tr>
+							<td>PG2</td>
+							<td>:="nilai_pg2": kPa</td>
+						</tr>
+						<tr>
+							<td>PG3</td>
+							<td>:="nilai_pg3": kPa</td>
+						</tr>
+						<tr>
+							<td>FM</td>
+							<td>:="nilai_fm": l/min</td>
+						</tr>
+					</table>
+					<table border="1" id="table3" cellpading="5">
+						<tr>
+							<th colspan="3">Kinerja Pompa</th>
+						</tr>
+						<tr>
+							<td>Perhitungan</td>
+							<td>Rumus</td>
+							<td>Nilai</td>
+						</tr>
+						<tr>
+							<td>Kecepatan Alir Fluida (V)</td>
+							<td>V = Q/A (m/s2)</td>
+							<td>:="kecepatan":</td>
+						</tr>
+						<tr>
+							<td>hl</td>
+							<td>hl = hlf + hlt (m)</td>
+							<td>:="HL":</td>
+						</tr>
+						<tr>
+							<td>Δhp</td>
+							<td>Δhp = hp2 - hp1 (m)</td>
+							<td>:="HP":</td>
+						</tr>
+						<tr>
+							<td>hs</td>
+							<td>hs = hisap + htekan (m)</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>hv</td>
+							<td>hv = V^2/2g (m)</td>
+							<td>:="HV":</td>
+						</tr>
+						<tr>
+							<td>Head Kapasitas Pompa (hkp)</td>
+							<td>H = hs + Δhp + hl + hv (m)</td>
+							<td>:="HKP":</td>
+						</tr>
+					</table>
+				</div>
+				<div id="footer">
+					<img id="mark" onmouseover="show()" onmouseout="unshow()" src="mark.png">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
